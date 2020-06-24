@@ -40,4 +40,15 @@ public class QueryProcessorTest {
     Assert.assertEquals(queryProcessor.process("362f1550:%20what%20is%208%20plus%203"), "11");
   }
 
+  @Test
+  public void plus1() {
+    Assert.assertEquals(queryProcessor.process("c06b6750:%20what%20is%204%20plus%206"), "10");
+  }
+
+  @Test
+  public void multiplied() {
+    Assert.assertEquals(queryProcessor.process("f28e8630:%20what%20is%206%20multiplied%20by%209"), "54");
+  }
+
+
 }

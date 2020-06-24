@@ -17,6 +17,10 @@ public class QueryProcessor {
             String[] numbers = query.substring(query.indexOf(":%20what%20is") + 15).replaceAll("%20", "").split("plus");
             return "" + Arrays.stream(numbers).mapToLong(Long::parseLong).sum();
         }
+        if (query.toLowerCase().contains("multiplied")) {
+            String[] numbers = query.substring(query.indexOf(":%20what%20is") + 15).replaceAll("%20", "").split("multipliedby");
+            return "" + Long.valueOf(numbers[0]) * Long.valueOf(numbers[1]);
+        }
         return "";
     }
 }
