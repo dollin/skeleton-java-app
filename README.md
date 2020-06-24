@@ -60,10 +60,10 @@ Log in to https://travis-ci.org using your GitHub account. Click the `+` or `Add
     Another way to add the remote is to run a command like:
     
     ```
-    heroku git:remote -a robbie-spike-horse-bucket
+    heroku git:remote -a dollin-skeleton-java-app
     ```
 
-    Test your application is deployed at a URL similar to [https://robbie-spike-horse-bucket.herokuapp.com](https://robbie-spike-horse-bucket.herokuapp.com/api?q=romeo%20and%20juliet)
+    Test your application is deployed at a URL similar to [https://dollin-skeleton-java-app.herokuapp.com](https://dollin-skeleton-java-app.herokuapp.com/api?q=romeo%20and%20juliet)
     
 2. Deploy automatically after a green build
 
@@ -88,5 +88,5 @@ deploy:
   provider: heroku
   api_key:
     secure: EPYf4T4U9WfJzHi4/CVp4Eom3PXark9x5fbQ23DGw/bjGxpnqMbqv8=
-  app: robbie-spike-horse-bucket
+  app: dollin-skeleton-java-app
 ```
