@@ -50,5 +50,8 @@ public class QueryProcessorTest {
     Assert.assertEquals(queryProcessor.process("f28e8630:%20what%20is%206%20multiplied%20by%209"), "54");
   }
 
-
+  @Test
+  public void primes() {
+    Assert.assertEquals(queryProcessor.process("a4f7e3a0:%20which%20of%20the%20following%20numbers%20are%20primes:%20461,%205"), "461, 5");
+  }
 }
