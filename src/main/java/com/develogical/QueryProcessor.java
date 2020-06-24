@@ -8,7 +8,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("romeo and juliet")) {
             return "William Shakespeare";
         }
-
+        if (query.toLowerCase().contains("banana")) {
+            return "Yellow";
+        }
         if (query.toLowerCase().contains("largest")) {
             String[] numbers = query.substring(query.indexOf("largest:") + 8).replaceAll("%20", "").split(",");
             return "" + Arrays.stream(numbers).map(String::trim).mapToLong(Long::parseLong).max().getAsLong();
