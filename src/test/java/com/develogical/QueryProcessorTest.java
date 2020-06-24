@@ -1,5 +1,6 @@
 package com.develogical;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -23,5 +24,10 @@ public class QueryProcessorTest {
   @Test
   public void returnsEmptyStringIfCannotProcessQuery() throws Exception {
     assertThat(queryProcessor.process("test"), is(""));
+  }
+
+  @Test
+  public void largest() {
+    Assert.assertEquals(queryProcessor.process("5f6da380:%20which%20of%20the%20following%20numbers%20is%20the%20largest:%20387,%2098"), "387");
   }
 }
