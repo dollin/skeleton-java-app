@@ -7,9 +7,10 @@ public class QueryProcessor {
     public String process(String query) {
         if (query.toLowerCase().contains("romeo and juliet")) {
             return "William Shakespeare";
-        }
-        if (query.toLowerCase().contains("banana")) {
+        } else if (query.toLowerCase().contains("banana")) {
             return "Yellow";
+        } else if (query.toLowerCase().contains("Eiffel tower")) {
+            return "Paris";
         }
         if (query.toLowerCase().contains("largest")) {
             String[] numbers = query.substring(query.indexOf("largest:") + 8).replaceAll("%20", "").split(",");
